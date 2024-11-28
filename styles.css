@@ -1,0 +1,52 @@
+/* Menambahkan styling untuk button */
+/* Gaya untuk tombol */
+.btn-outline-primary {
+  border-color: #ff5733; /* Ganti border warna tombol */
+  color: #ff5733; /* Ganti warna teks tombol */
+  transition: all 0.3s ease, transform 0.2s ease-in-out;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(255, 87, 51, 0.5); /* Menyesuaikan box shadow dengan warna baru */
+}
+
+.btn-outline-primary:hover {
+  background-color: #ff5733; /* Ganti warna latar belakang saat hover */
+  color: white; /* Ganti warna teks saat hover */
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 87, 51, 0.8); /* Menyesuaikan efek hover */
+}
+
+
+/* Styling Header */
+header {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Responsif untuk tampilan kecil */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-outline-primary {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+/* Gaya untuk tombol kembali */
+.btn-outline-primary {
+  border-color: #007bff; /* Biru muda */
+  color: #007bff; 
+}
+
+.btn-outline-primary:hover {
+  background-color: #4db8ff;
+  color: white;
+}

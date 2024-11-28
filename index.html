@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jawaban Asesmen Sumatif Akhir Semester</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Hero Section Background */
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('bg.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      padding: 80px 0; /* Adjust padding to give space */
+    }
+
+    /* Button Hover Effects */
+    .btn-outline-primary {
+      transition: all 0.3s ease, transform 0.2s ease-in-out;
+      border-radius: 50px;
+      font-weight: 600;
+      box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+    }
+
+    .btn-outline-primary:hover {
+      background-color: #0d6efd;
+      color: white;
+      transform: scale(1.1) translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    }
+
+    /* Animation for Button */
+    .btn-animated {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Marquee Styling with CSS Animation */
+    .marquee-wrapper {
+      position: relative;
+      overflow: hidden;
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .marquee-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-left 20s linear infinite;
+      font-size: 16px;
+      color: #007bff;
+      margin: 0;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Subtitle Styling */
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-top: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Responsive Styling for Buttons */
+    .btn {
+      font-size: 1.1rem;
+      padding: 15px 25px;
+    }
+
+    /* Mobile Friendly */
+    @media (max-width: 768px) {
+      .btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container text-center">
+      <h2>JAWABAN ASESMEN SUMATIF AKHIR SEMESTER</h2>
+      <p>TAHUN PELAJARAN 2024/2025</p>
+    </div>
+  </header>
+
+  <!-- Marquee Section with Smooth CSS Animation -->
+  <div class="marquee-wrapper">
+    <p class="marquee-content">Portal ini digunakan untuk memeriksa jawaban asesmen sumatif akhir semester (ASAS)<strong></strong></p>
+  </div>
+
+<!--   Modal Information (Automatically shown when page loads)
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Informasi Asesmen</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Pastikan kalian telah mempersiapkan diri dengan baik untuk Asesmen Sumatif Akhir Semester (ASAS)
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Halaman Utama -->
+  <div class="container text-center">
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-md-4 mb-3">
+        <a href="kelas7.html" class="btn btn-outline-primary w-100 btn-animated">KELAS 7</a>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <a href="kelas8.html" class="btn btn-outline-primary w-100 btn-animated">KELAS 8</a>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <a href="kelas9.html" class="btn btn-outline-primary w-100 btn-animated">KELAS 9</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Automatically show the modal on page load
+    window.onload = function () {
+      var infoModal = new bootstrap.Modal(document.getElementById('infoModal'));
+      infoModal.show();
+    }
+	
+  </script>
+
+</body>
+
+</html>
+
